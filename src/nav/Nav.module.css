@@ -1,0 +1,13 @@
+
+.nav {
+    width: 400px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}

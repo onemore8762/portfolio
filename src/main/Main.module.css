@@ -1,0 +1,16 @@
+
+.mainBlock{
+    height: 100vh;
+    background-color: rgba(44, 44, 44, 0.29);
+}
+
+.text {
+    width: 280px;
+    background-color: pink;
+}
+
+.photo{
+    background-color: aquamarine;
+    width: 280px;
+    height: 400px;
+}

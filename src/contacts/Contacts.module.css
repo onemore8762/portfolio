@@ -1,0 +1,36 @@
+
+.contactsBlock{
+    height: 100vh;
+    background-color: #7e4747;
+}
+
+.contactsContainer{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+}
+
+.header{
+    background-color: #726b6b;
+}
+
+.contactsForm{
+    width: 100%;
+    max-width: 360px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactsForm textarea{
+    resize: none;
+    height: 100px;
+}
+
+.contactsContainer a{
+    background-color: #726b6b;
+    padding: 10px 30px;
+}
