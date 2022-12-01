@@ -1,7 +1,8 @@
 
 .projectsBlock {
-    min-height: 100vh;
-    background-color: rgba(44, 44, 44, 0.47);
+    padding: 100px 0;
+    background-color: #1f1f20;
+    color: #fff;
 }
 
 .projectsContainer {
@@ -10,10 +11,39 @@
     justify-content: start;
 }
 
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.title::before{
+    content:"";
+    position: absolute;
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+    background: #4e93e6;
+    bottom:-50px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
 .projects {
+    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 10px
+    gap: 25px;
 }
+
+
+
+
+ /*
+ background: #4e93e6
+  */
