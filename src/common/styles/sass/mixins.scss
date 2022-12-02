@@ -1,0 +1,21 @@
+@import "./variables";
+
+@mixin josefin($fontSize, $fontWeight, $lineHeight) {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight ;
+}
+
+@mixin poppins($fontSize, $fontWeight, $lineHeight) {
+  font-family: 'Poppins' , sans-serif;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight ;
+}
+
+@mixin dja ($display, $justifyContent, $alignItems) {
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}

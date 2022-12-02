@@ -1,9 +1,11 @@
 import React from 'react';
-import s from './Projects.module.css'
+import s from './Projects.module.scss'
 import sContainer from '../common/styles/Container.module.css'
 import Project from "./Project/Project";
 import todoListImg from '../assets/image/demo_todolist.jpg'
 import socialImg from '../assets/image/social.png'
+import Title from "../common/components/Title/Title";
+
 const Projects = () => {
     const todoList = {
         backgroundImage: `url(${todoListImg})`
@@ -16,9 +18,7 @@ const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={`${s.projectsContainer} ${sContainer.container}`}>
-                <div className={s.title}>
-                    <h2>Projects</h2>
-                </div>
+                <Title title={'Projects'}/>
                 <div className={s.projects}>
                     <Project style={social} title={"Social network"} description={titleTodo}/>
                     <Project style={todoList} title={"TodoList"} description={titleTodo}/>

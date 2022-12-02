@@ -1,0 +1,95 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.contactsBlock {
+  color: #fff;
+  background-color: $backGroundColorSecond;
+
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+
+    a {
+      background-color: #726b6b;
+      padding: 10px 30px;
+    }
+
+    .contactsForm {
+      width: 100%;
+      max-width: 540px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .input, .textarea {
+        color: #fff;
+        background: $backGroundColor;
+        border: 1px solid #4a4a4a;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 12px;
+        padding: 0 15px;
+        font-weight: 400;
+        line-height: 1.5;
+        transition: 800ms;
+
+        &:focus, .textarea:focus {
+          transition: 800ms;
+          border: 1px solid transparent;
+          outline: none;
+        }
+      }
+
+      .textarea {
+        padding: 10px 15px;
+        resize: none;
+        height: 200px;
+      }
+    }
+
+    .btn {
+      color: $colorText;
+      @include poppins(14px, 400, 1.2);
+      text-transform: uppercase;
+      border: none;
+      background: none;
+      position: relative;
+      z-index: 1;
+      padding: 7px 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 10px;
+        width: 50%;
+        background: $primaryColor;
+        margin: 0 auto;
+        z-index: -1;
+        transition: 200ms;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover::after {
+        height: 35px;
+        width: 130px;
+        transition: 200ms;
+      }
+
+    }
+
+  }
+}
+
+
+
+
+
+
+

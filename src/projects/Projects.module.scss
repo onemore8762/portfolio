@@ -1,0 +1,23 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+
+.projectsBlock {
+  background-color: $backGroundColor;
+  color: #fff;
+
+  .projectsContainer {
+    @include dja(flex, flex-start, default);
+    flex-direction: column;
+  }
+
+  .projects {
+    @include dja(flex, space-evenly, default);
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+}
+

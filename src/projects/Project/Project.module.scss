@@ -1,0 +1,71 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+
+
+.project {
+  width: 40%;
+  min-width: 350px;
+  background: $backGroundColorSecond;
+  transition: 500ms;
+
+  .imgContainer {
+    @include dja(flex, center, center);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 260px;
+
+    a {
+      position: absolute;
+      z-index: 1;
+      color: #fff;
+      background: #4e93e6;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: 300ms;
+    }
+
+    a:hover {
+      transition: 300ms;
+      padding: 12px 22px;
+      font-size: 18px;
+
+      & ~ .backGround {
+        opacity: 0.7;
+        transition: 1s;
+      }
+    }
+
+    .backGround {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.3;
+      transition: 1s;
+    }
+  }
+
+  .descriptionBlock {
+    padding: 25px 20px;
+
+    .title {
+      @include josefin(16px, 700, default);
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      @include poppins(14px, 400, default);
+      display: block;
+      margin-top: 10px;
+      width: 100%;
+      min-height: 60px;
+    }
+
+  }
+
+}
+

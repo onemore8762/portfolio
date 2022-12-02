@@ -1,0 +1,92 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.mainBlock {
+  color: $colorText;
+  height: 100vh;
+  background-color: $backGroundColor;
+
+  .mainContainer {
+    @media screen and (max-width: 880px) {
+      justify-content: center;
+    }
+  }
+
+  .text {
+    width: 50%;
+    max-width: 500px;
+    min-width: 200px;
+    @media screen and (max-width: 541px) {
+      max-width: 280px;
+      transition: 500ms;
+    }
+
+    span, p {
+      @include poppins(16px, 400, default);
+    }
+
+    h1 {
+      @include josefin(50px, 700, default);
+      padding: 10px 0 10px;
+
+      span {
+        display: inline-block;
+        position: relative;
+        font: inherit;
+        z-index: 1;
+
+        &::after {
+          z-index: -1;
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+          height: 20px;
+          width: 100%;
+          background: $primaryColor;
+        }
+      }
+
+    }
+
+    p {
+      font-size: 27px;
+    }
+
+  }
+
+  .imgContainer {
+    position: relative;
+    z-index: 1;
+
+    .photo {
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 350px;
+      height: 420px;
+      z-index: 1;
+      transition: 500ms;
+      @media screen and (max-width: 450px) {
+        width: 220px;
+        height: 320px;
+        transition: 500ms;
+      }
+    }
+
+    .borderPhoto {
+      position: absolute;
+      z-index: -1;
+      top: -18px;
+      right: -25px;
+      width: 104%;
+      height: 110%;
+      border: 5px solid $primaryColor;
+    }
+  }
+
+
+}
+
+

@@ -1,0 +1,25 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+
+.title {
+  @include josefin(40px, 400, 1.2);
+  letter-spacing: 5px;
+  margin: 0 0 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: $primaryColor;
+    position: absolute;
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+
+
