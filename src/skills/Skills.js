@@ -12,7 +12,7 @@ import sassIconImg from '../assets/icon/sass.svg'
 import cssIconImg from '../assets/icon/css.svg'
 import typeScriptIconImg from '../assets/icon/typescript.svg'
 import formikIconImg from '../assets/icon/formik.svg'
-
+import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
 
@@ -29,16 +29,18 @@ const Skills = () => {
     ]
 
     return (
-        <div className={s.skillsBlock}>
+        <div id={'skills'} className={s.skillsBlock}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={s.skills}>
+                    <Fade top cascade>
                     {skills.map(el => {
                         const reactIcon = {
                             backgroundImage: `url(${el.icon})`
                         }
                         return <Skill style={reactIcon} title={el.title} description={el.text}/>
                     })}
+                    </Fade>
                 </div>
             </div>
         </div>

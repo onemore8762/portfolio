@@ -7,12 +7,12 @@
   color: #fff;
 
   .projectsContainer {
-    @include dja(flex, flex-start, default);
+    @include dja(flex, flex-start, normal);
     flex-direction: column;
   }
 
   .projects {
-    @include dja(flex, space-evenly, default);
+    @include dja(flex, space-evenly, normal);
     margin-top: 30px;
     width: 100%;
     flex-wrap: wrap;

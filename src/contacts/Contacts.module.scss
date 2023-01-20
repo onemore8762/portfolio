@@ -4,7 +4,7 @@
 .contactsBlock {
   color: #fff;
   background-color: $backGroundColorSecond;
-
+  min-height: 100vh;
   .contactsContainer {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@
 
     .btn {
       color: $colorText;
-      @include poppins(14px, 400, 1.2);
+      @include poppins(14px, 400, normal);
       text-transform: uppercase;
       border: none;
       background: none;
@@ -74,13 +74,13 @@
 
       &:hover {
         cursor: pointer;
+        &::after {
+          height: 35px;
+          width: 130px;
+          transition: 200ms;
+        }
       }
 
-      &:hover::after {
-        height: 35px;
-        width: 130px;
-        transition: 200ms;
-      }
 
     }
 

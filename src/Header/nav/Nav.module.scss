@@ -1,0 +1,23 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.nav {
+  @include josefin(20px, 400, 1.2);
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .active {
+    color: $primaryColor
+  }
+  @media screen and (max-width: 500px){
+    display: none ;
+  }
+}
+
+

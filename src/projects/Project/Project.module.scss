@@ -52,13 +52,13 @@
     padding: 25px 20px;
 
     .title {
-      @include josefin(16px, 700, default);
+      @include josefin(16px, 700, normal);
       letter-spacing: 1px;
       margin-bottom: 15px;
     }
 
     .description {
-      @include poppins(14px, 400, default);
+      @include poppins(14px, 400, normal);
       display: block;
       margin-top: 10px;
       width: 100%;

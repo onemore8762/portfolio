@@ -14,7 +14,7 @@
     flex-wrap: wrap;
 
     .footerLogo {
-      @include josefin(22px, 700, default);
+      @include josefin(22px, 700, normal);
       color: $colorText;
       text-decoration: none;
       text-align: center;

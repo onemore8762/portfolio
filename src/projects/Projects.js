@@ -16,7 +16,7 @@ const Projects = () => {
     const titleTodo = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim..."
     return (
-        <div className={s.projectsBlock}>
+        <div id={'projects'} className={s.projectsBlock}>
             <div className={`${s.projectsContainer} ${sContainer.container}`}>
                 <Title title={'Projects'}/>
                 <div className={s.projects}>
